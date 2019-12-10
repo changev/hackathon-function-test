@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<testsuites name="jest tests" tests="14" failures="0" time="2.708"> 
+  <testsuite name="Demo" errors="0" failures="0" skipped="0" timestamp="2019-12-06T03:11:39" time="1.034" tests="11"> 
+    <testcase classname="Demo GET /demo/foo-is-required should work if the parameter is present" name="Demo GET /demo/foo-is-required should work if the parameter is present" time="0.02"> 
+    </testcase> 
+    <testcase classname="Demo GET /demo/foo-is-required should result in a 400 is parameter is missing" name="Demo GET /demo/foo-is-required should result in a 400 is parameter is missing" time="0.005"> 
+    </testcase> 
+    <testcase classname="Demo GET /demo/foo-must-be-numeric should work if the parameter is valid" name="Demo GET /demo/foo-must-be-numeric should work if the parameter is valid" time="0.001"> 
+    </testcase> 
+    <testcase classname="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter is not numeric" name="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter is not numeric" time="0.002"> 
+    </testcase> 
+    <testcase classname="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter mixes numbers with letters" name="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter mixes numbers with letters" time="0.002"> 
+    </testcase> 
+    <testcase classname="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter is missing" name="Demo GET /demo/foo-must-be-numeric should result in a 400 if the parameter is missing" time="0.001"> 
+    </testcase> 
+    <testcase classname="Demo POST /demo/body-must-have-foo-with-bar should work if the body has foo with bar" name="Demo POST /demo/body-must-have-foo-with-bar should work if the body has foo with bar" time="0.014"> 
+    </testcase> 
+    <testcase classname="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container is missing" name="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container is missing" time="0.003">
+    </testcase>
+    <testcase classname="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container does not have bar" name="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container does not have bar" time="0.002">
+    </testcase> 
+    <testcase classname="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container does not have bar" name="Demo POST /demo/body-must-have-foo-with-bar should result in a 400 is foo container does not have bar" time="0.002">
+    </testcase>
+    <testcase classname="Demo GET /demo/error should result in 500 app error response" name="Demo GET /demo/error should result in 500 app error response" time="0.001">
+    </testcase>
+    <testcase classname="Demo GET /demo/error-without-message should result in 500 app error response" name="Demo GET /demo/error-without-message should result in 500 app error response" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="Health check" errors="0" failures="0" skipped="0" timestamp="2019-12-06T03:11:40" time="0.511" tests="2">
+    <testcase classname="Health check GET /health/shallow should result in JSON success document" name="Health check GET /health/shallow should result in JSON success document" time="0.058">
+    </testcase>
+    <testcase classname="Health check GET /health/deep should result in JSON success document" name="Health check GET /health/deep should result in JSON success document" time="0.201">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root" errors="0" failures="0" skipped="0" timestamp="2019-12-06T03:11:41" time="0.333" tests="1">
+    <testcase classname="Root GET / should result in API name response" name="Root GET / should result in API name response" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
